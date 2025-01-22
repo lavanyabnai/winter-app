@@ -3,8 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { SettingsIcon, UsersIcon } from "lucide-react";
-import { GoCheckCircle, GoCheckCircleFill, GoGraph, GoHome, GoHomeFill, GoGoal, GoGoalFill, GoServer } from "react-icons/go";
-
+import { GoCheckCircle, GoCheckCircleFill, GoGraph, GoHome, GoHomeFill, GoGoal, GoServer } from "react-icons/go";
+import { MdOutlineWarehouse } from "react-icons/md";
 import { useWorkspaceId } from "@/features/workspaces/hooks/use-workspace-id";
 
 import { cn } from "@/lib/utils";
@@ -16,11 +16,17 @@ const routes = [
     icon: GoHome,
     activeIcon: GoHomeFill,
   },
-     {
-    label: "Analytics",
-    href: "/analytics",
-    icon: GoGraph,
-    activeIcon: GoGraph,
+      {
+      label: "Analytics",
+      href: "/analytics",
+      icon: GoGraph,
+      activeIcon: GoGraph,
+  },
+  {
+    label: "Warehouse",
+    href: "/warehouse",
+    icon: MdOutlineWarehouse,
+    activeIcon: MdOutlineWarehouse,
   },
   {
     label: "Control",

@@ -53,6 +53,7 @@ export const WorkspaceIdClient = () => {
         <TaskList data={tasks.documents} total={tasks.total} />
         <ProjectList data={projects.documents} total={projects.total} />
         <MembersList data={members.documents} total={members.total} />
+        
       </div>
     </div>
   );
